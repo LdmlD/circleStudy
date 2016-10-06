@@ -1,3 +1,11 @@
 machine:
   xcode:
     version: "7.0"
+
+dependencies:
+  pre:
+    - brew install cowsay
+test:
+  override:
+    - xcodebuild -version
+    - cowsay Hi!
